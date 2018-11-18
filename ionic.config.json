@@ -1,5 +1,7 @@
 {
   "name": "nativecamera",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

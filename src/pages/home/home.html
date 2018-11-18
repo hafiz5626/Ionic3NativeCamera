@@ -1,14 +1,16 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Native Camera
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <button ion-button block color="primary" (click)="takeASefie()">Take a selfie</button>
+  <button ion-button block color="primary" (click)="takePictureFromCamera()">Take a picture</button>
+  <button ion-button block color="primary" (click)="takePictureFromAlbum()">Get picture from album</button>
+  <ion-item *ngIf="imageData">
+    <img [src]="imageData" />
+  </ion-item>
 </ion-content>
